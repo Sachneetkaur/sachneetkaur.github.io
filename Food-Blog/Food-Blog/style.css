@@ -1,0 +1,132 @@
+/* === Typography === */
+
+body {
+font-family: ‘Helvetica’, ‘Arial’, sans-serif;
+font-size: 14pt;
+line-height: 18pt;
+color: #000000;
+}
+
+nav a {
+	font-family: 'Helvetica';
+	font-size: 18pt;
+	color: #cdcdcd;
+	text-decoration: none;
+	
+}
+
+h1{
+	font-family: 'Teko';
+	font-size: 72pt;
+}
+
+footer{
+	font-family: 'Helvetica';
+	font-size: 10pt;
+	color: #9f9f9f;
+}
+
+/* === Backgrounds === */
+
+header{
+	background-color: #000000;
+	text-align: center;
+}
+
+main{
+	background-color: #cdcdcd;
+}
+
+body{
+	background-color: #ffffff
+}
+
+footer{
+	background-color: #000000;
+	text-align: center;
+}
+
+
+/* === Box Model === */
+
+#splash {
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(heading.jpg);
+	background-size: cover;
+}
+	
+		
+
+nav{
+	padding: 40px;
+}
+
+footer{
+	padding: 40px;
+}
+
+#foodarticles{
+	padding: 40px;
+}
+
+article{
+	margin-bottom: 50px;
+}
+
+nav{
+	margin-right: 15px;
+}
+
+/* === Layout ===*/
+
+.floatleft{
+	float: left;
+	margin-bottom: 60px;
+	margin-right: 20px;
+	
+}
+
+#container{
+	width: 1000px;
+	margin: auto
+	
+}
+
+main{
+	display: grid;
+	grid-template-columns: 75% 25%
+}
+
+#splash{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+aside{
+	margin-left: 35px;
+}
+
+header{
+	position: top left;
+	width: 100%;
+	padding: 30px;
+}
+
+body{
+	padding-top: 175px;
+}
+
+#advertisement{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	background-color: #ff0000
+	
+	
+	
+	
+	
+}
