@@ -1,137 +1,132 @@
-/* 
-Lab: Basics Grids and Flexbox
-=== Do not change CSS below === 
-*/
-
-
-* {
-    box-sizing: border-box;
-}
+/* === Typography === */
 
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 14pt;
-    line-height: 18pt;
-    background-color: #e0ff9e;
-    padding: 0;
-    margin: 0;
-    color: #052e00;
-
-}
-
-header {
-    padding: 40px 20px 40px 20px;
-    background-color: #9eb56e;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    padding: 0 50px;
-    background-color: #9eb56e;
+font-family: ‘Helvetica’, ‘Arial’, sans-serif;
+font-size: 14pt;
+line-height: 18pt;
+color: #000000;
 }
 
 nav a {
-    margin-right: 5px;
+	font-family: 'Helvetica';
+	font-size: 18pt;
+	color: #cdcdcd;
+	text-decoration: none;
+	
 }
 
-a {
-    text-decoration: none;
-    color: #1d7072;
+h1{
+	font-family: 'Teko';
+	font-size: 72pt;
 }
 
-h1 {
-    font-weight: normal;
-    font-size: 42pt;
-    color: #1d7072;
-    margin: 0 0;
-	font-family: 'Fredoka One';
+footer{
+	font-family: 'Helvetica';
+	font-size: 10pt;
+	color: #9f9f9f;
 }
 
-
-.splash {
-    background-size: cover;
-    background-position: center top;
-    min-height: 300px;
-}
-
-#splashSection {
-    background-image: url(images/antique1.jpg);
-    background-position: center center;
-    height: 500px;
-}
-
-#splash2 {
-    background-image: url(images/antique5.jpg);
-}
-
-#splash3 {
-    background-image: url(images/antique3.jpg);
-}
-
-#splash4 {
-    background-image: url(images/antique4.jpg)
-}
-
-#splash5 {
-    background-image: url(images/antique6.jpg);
-}
-
-#splash6 {
-    background-image: url(images/antique2.jpg);
-}
-
-#antique-text-1,
-#antique-text-2 {
-    padding: 20px;
-    background-color: #ffe499;
-}
-
-/* === Add New CSS Below === */
+/* === Backgrounds === */
 
 header{
-	display: grid;
-	grid-template-columns: 50% 50%;
+	background-color: #000000;
+	text-align: center;
+}
+
+main{
+	background-color: #cdcdcd;
+}
+
+body{
+	background-color: #ffffff
+}
+
+footer{
+	background-color: #000000;
+	text-align: center;
+}
+
+
+/* === Box Model === */
+
+#splash {
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(heading.jpg);
+	background-size: cover;
+}
+	
+		
+
+nav{
+	padding: 40px;
+}
+
+footer{
+	padding: 40px;
+}
+
+#foodarticles{
+	padding: 40px;
+}
+
+article{
+	margin-bottom: 50px;
+}
+
+nav{
+	margin-right: 15px;
+}
+
+/* === Layout ===*/
+
+.floatleft{
+	float: left;
+	margin-bottom: 60px;
+	margin-right: 20px;
+	
+}
+
+#container{
+	width: 1000px;
+	margin: auto
+	
 }
 
 main{
 	display: grid;
-	grid-template-columns: 33% 33% 33%;
-	grid-row-gap: 25px;
+	grid-template-columns: 75% 25%
+}
+
+#splash{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+aside{
+	margin-left: 35px;
+}
+
+header{
+	position: top left;
+	width: 100%;
+	padding: 30px;
+}
+
+body{
+	padding-top: 175px;
+}
+
+#advertisement{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	background-color: #ff0000
 	
-}
-
-footer{
-	display: grid;
-	grid-template-columns: 50% 50%;
 	
-}
-
-nav{
-	text-align: right;
-}
-
-#antiques{
-	display: grid;
-	grid-template-columns: 33.33% 33.33% 33.33%;
-
-}
-
-#splash2{
-	grid-column-start: 2;
-	grid-column-end: 4;
-}
-
-#splash3{
-	grid-column-start: 2;
-	grid-column-end: 4;
 	
-}
-
-#spashSection{
-	display: flex;
-	align-items: vertical  center;
+	
 	
 }
